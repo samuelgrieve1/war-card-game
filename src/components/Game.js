@@ -29,7 +29,7 @@ const Game = (props) => {
     .catch(error => console.error(`Error in fetch: ${error.message}`))
   }, [])
 
-  let cards
+  // let cards
 
   // if (deck.cards) {
   //   cards = deck.cards.map((card) => {
@@ -60,6 +60,7 @@ const Game = (props) => {
           compCardPlayed.innerHTML = `<img src=${card.cards[1].image}></img>`
         }
         deck.remaining -= 2
+        alert("Whatchya clickin that for stupid!")
       })
     }else{
       userCardPlayed.innerHTML = "Out of cards"
