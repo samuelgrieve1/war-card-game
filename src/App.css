@@ -4,14 +4,17 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(./img/bg.jpg);
+  background-image: url(./img/casino.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
   z-index: -1;
+  border: 10px solid black inset;
 }
 .App {
   text-align: center;
+  color: #ffffff;
 }
 
 .App-logo {
@@ -48,15 +51,21 @@
     transform: rotate(360deg);
   }
 }
+.rotate-left {
+  transform: rotate(-15deg);
+}
+.rotate-right {
+  transform: rotate(15deg);
+}
 .card-played, .card-stack {
   min-height: 200px;
-  max-height: 200px;
-  min-width: 160px;
+  max-height: 600px;
+  min-width: 300px;
 }
 .card-played img, .card-stack img {
-  max-height: 200px;
+  max-height:400px;
 }
-.card-played, .card-stack {
+.card-stack {
   background-image: url("img/card-space.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -64,4 +73,67 @@
 }
 #user-card-stack:hover {
   cursor: pointer;
+}
+.cards-played {
+  margin: 40px 0 !important;
+  background-image: url("img/green-felt-bg.jpg");
+  background-size: 20%;
+}
+#comp-card-stack {
+  z-index: 1;
+}
+#comp-discard-stack {
+  z-index: 0;
+}
+.no-padding {
+  padding: 0 !important;
+}
+.full-width {
+  max-width: 100% !important;
+}
+#ship {
+  max-width: 200px !important;
+}
+/* .table-bg {
+  background-image: url("img/green-felt-bg.jpg");
+  background-size: 20%;
+} */
+.margin-bottom {
+  margin-bottom: 40px !important;
+}
+.black-bg {
+  background: rgba(0, 0, 0, 0.8)
+}
+.cell-padding {
+  padding: 40px !important;
+}
+.cell-padding-top {
+  padding-top: 40px !important;
+}
+.button {
+  background-color: rgb(152, 0, 0) !important;
+}
+.hideIt {
+  display: none !important;
+}
+.compCards {
+  position: fixed;
+  top: -50px;
+  width: 66.66% !important;
+}
+.userCards {
+  position: fixed;
+  bottom: -50px;
+  width: 66.66% !important;
+}
+.cardsPlayed {
+  position: fixed;
+  width: 66.66% !important;
+  top: calc(50% - 180px)
+}
+.lefty {
+  padding-bottom: 400px;
+}
+.cardNumbers {
+  padding-top: 100px;
 }

@@ -7,14 +7,13 @@ import './assets/css/foundation.css';
 function App() {
   return (
     <div className="App">
-      <div className="grid-container">
-      <BrowserRouter>
-      <Switch>
-        <Route exact path="/" component={Home}/>
-        <Route exact path="/game" component={Game} />
-      </Switch>
-    </BrowserRouter>
-
+      <div className="grid-container no-padding full-width">
+        <BrowserRouter>
+          <Switch>
+            <Route exact path="/" component={Home}/>
+            <Route exact path="/game" component={Game} />
+          </Switch>
+        </BrowserRouter>
       </div>
       <div className="bg"></div>
     </div>
