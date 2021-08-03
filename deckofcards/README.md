@@ -1,4 +1,4 @@
-# deckofcards
+# War: Star Trek Edition
 
 [Play Now](https://war-card-game-xi.vercel.app/game)
         
