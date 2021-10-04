@@ -137,3 +137,45 @@
 .cardNumbers {
   padding-top: 100px;
 }
+
+/*Tarwin*/
+
+
+
+/* figure out how scss/sass works so i can wrap "ON" and "OFF"
+into conditional statements to easily switch between the two */
+
+
+
+/* ON */
+.t-user-vs-comp h1 {
+  font-size: 18px !important;
+}
+/* .t-score-board {
+  background-color: rgb(179, 133, 56, 0.1);
+  width: 70%;
+  margin: 0 15%;
+} */
+.t-score-big {
+  font-size: 36px !important;
+  font-weight: bold;
+}
+.t-score-small {
+  font-size: 24px !important;
+}
+.hidden {
+  display: none !important;
+}
+#playACard, #startGame {
+  background: linear-gradient(#E5BB40, #B38538) !important;
+  background: linear-gradient(#B38538, #E5BB40) !important;
+  width: 60%;
+  border-radius: 10px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* OFF */
